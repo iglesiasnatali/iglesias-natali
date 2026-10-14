@@ -3,6 +3,12 @@
 Todas las modificaciones importantes del proyecto se registran en este archivo,
 aplicando **Versionado Semantico** (MAYOR.MENOR.PARCHE).
 
+## [1.0.1] - 2026-10-14
+
+### Corregido
+- Error crítico en `dividir()`: el programa se caía con `ZeroDivisionError`
+  al dividir por cero. Ahora lanza un mensaje claro (`ValueError`).
+
 ## [1.0.0] - 2026-10-14
 
 ### Agregado
