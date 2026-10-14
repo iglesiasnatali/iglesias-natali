@@ -15,7 +15,13 @@ def restar(a, b):
 
 
 def dividir(a, b):
-    """Devuelve la division de dos numeros."""
+    """Devuelve la division de dos numeros.
+
+    Evita el error critico de dividir por cero: antes el programa se
+    caia con ZeroDivisionError.
+    """
+    if b == 0:
+        raise ValueError("No se puede dividir por cero")
     return a / b
 
 
