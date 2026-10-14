@@ -19,12 +19,18 @@ def dividir(a, b):
     return a / b
 
 
+def multiplicar(a, b):
+    """Devuelve el producto de dos numeros."""
+    return a * b
+
+
 def main():
     """Punto de entrada por linea de comandos."""
     print("Calculadora basica")
     print(f"2 + 3 = {sumar(2, 3)}")
     print(f"5 - 1 = {restar(5, 1)}")
     print(f"10 / 2 = {dividir(10, 2)}")
+    print(f"4 * 6 = {multiplicar(4, 6)}")
 
 
 if __name__ == "__main__":
