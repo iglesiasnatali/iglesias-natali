@@ -1,0 +1,12 @@
+# Variables de entorno (credenciales) - NUNCA subir al repositorio
+.env
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
