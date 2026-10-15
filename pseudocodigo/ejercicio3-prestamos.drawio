@@ -1,0 +1,68 @@
+<mxfile host="65bd71144e">
+    <diagram id="prestamos" name="Ejercicio 3 - Prestamos">
+        <mxGraphModel dx="649" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="a1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Inicio" vertex="1">
+                    <mxGeometry height="50" width="160" x="300" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Leer nombre y apellido, edad, ingreso&amp;nbsp;&lt;div&gt;mensual y antigüedad laboral&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="280" x="240" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿Tiene 18 años o más?" vertex="1">
+                    <mxGeometry height="90" width="160" x="300" y="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿Ingreso mensual ≥ $800.000?" vertex="1">
+                    <mxGeometry height="90" width="240" x="260" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿Antigüedad laboral ≥ 2 años?" vertex="1">
+                    <mxGeometry height="90" width="240" x="260" y="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="a6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Mostrar:&amp;nbsp;&lt;div&gt;PRÉSTAMO&amp;nbsp;&lt;/div&gt;&lt;div&gt;RECHAZADO&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="140" x="600" y="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="a7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Mostrar: PRÉSTAMO APROBADO" vertex="1">
+                    <mxGeometry height="70" width="160" x="300" y="610" as="geometry"/>
+                </mxCell>
+                <mxCell id="a8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Fin" vertex="1">
+                    <mxGeometry height="50" width="160" x="300" y="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="ae1" edge="1" parent="1" source="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="a2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ae2" edge="1" parent="1" source="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="a3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ae3" edge="1" parent="1" source="a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="a4" value="Sí">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ae4" edge="1" parent="1" source="a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="a6" value="No">
+                    <mxGeometry relative="1" x="0.322" as="geometry"/>
+                </mxCell>
+                <mxCell id="ae5" edge="1" parent="1" source="a4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="a5" value="Sí">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ae6" edge="1" parent="1" source="a4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="a6" value="No">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ae7" edge="1" parent="1" source="a5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="a7" value="Sí">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ae8" edge="1" parent="1" source="a5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a6" value="No">
+                    <mxGeometry relative="1" x="0.3164" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="670" y="525"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ae9" edge="1" parent="1" source="a7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="a8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ae10" edge="1" parent="1" source="a6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" target="a8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,107 @@
+<mxfile host="65bd71144e">
+    <diagram id="stock" name="Ejercicio 2 - Control de stock">
+        <mxGraphModel dx="1618" dy="1205" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="b1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Inicio" vertex="1">
+                    <mxGeometry height="50" width="160" x="480" y="23" as="geometry"/>
+                </mxCell>
+                <mxCell id="b2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Leer cantidad de productos (N)" vertex="1">
+                    <mxGeometry height="50" width="260" x="430" y="93" as="geometry"/>
+                </mxCell>
+                <mxCell id="b3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="bajo = 0 ; suficiente = 0" vertex="1">
+                    <mxGeometry height="50" width="260" x="430" y="163" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿i ≤ N?" vertex="1">
+                    <mxGeometry height="90" width="160" x="480" y="326" as="geometry"/>
+                </mxCell>
+                <mxCell id="b5" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Leer nombre del producto y su stock" vertex="1">
+                    <mxGeometry height="50" width="260" x="430" y="453" as="geometry"/>
+                </mxCell>
+                <mxCell id="b6" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="¿Stock menor a 10?" vertex="1">
+                    <mxGeometry height="90" width="160" x="480" y="533" as="geometry"/>
+                </mxCell>
+                <mxCell id="b7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Mostrar &quot;Producto&lt;div&gt;&amp;nbsp;con stock bajo&quot;&amp;nbsp;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="120" x="310" y="603" as="geometry"/>
+                </mxCell>
+                <mxCell id="b8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="suficiente = suficiente + 1" vertex="1">
+                    <mxGeometry height="70" width="170" x="670" y="623" as="geometry"/>
+                </mxCell>
+                <mxCell id="b9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="i = i + 1" vertex="1">
+                    <mxGeometry height="50" width="160" x="480" y="733" as="geometry"/>
+                </mxCell>
+                <mxCell id="b10" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" value="Mostrar:&lt;div&gt;&amp;nbsp;cantidad de stock bajo&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;cantidad de stock suficiente&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="70" width="210" x="750" y="336" as="geometry"/>
+                </mxCell>
+                <mxCell id="b11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Fin" vertex="1">
+                    <mxGeometry height="50" width="160" x="775" y="443" as="geometry"/>
+                </mxCell>
+                <mxCell id="be1" edge="1" parent="1" source="b1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="b2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="be2" edge="1" parent="1" source="b2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="b3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="be3" edge="1" parent="1" source="KkATwMuEU8edBqc6IpdI-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="b4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="be4" edge="1" parent="1" source="b4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="b5" value="Sí">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="be5" edge="1" parent="1" source="b5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="b6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="be6" edge="1" parent="1" source="b6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="b7" value="Sí">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="be7" edge="1" parent="1" source="b6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="b8" value="No">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="be8" edge="1" parent="1" source="KkATwMuEU8edBqc6IpdI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;" target="b9">
+                    <mxGeometry relative="1" x="-0.687" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="370" y="758"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="be9" edge="1" parent="1" source="b8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=1;entryY=0.5;exitDx=0;exitDy=0;" target="b9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="be10" edge="1" parent="1" source="b9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;exitDx=0;exitDy=0;" target="b4" value="volver al ciclo">
+                    <mxGeometry relative="1" x="0.1362" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="560" y="803"/>
+                            <mxPoint x="270" y="803"/>
+                            <mxPoint x="270" y="371"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="be11" edge="1" parent="1" source="b4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="b10" value="No">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="be12" edge="1" parent="1" source="b10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="b11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="KkATwMuEU8edBqc6IpdI-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;bajo = bajo + 1&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="310" y="723" as="geometry"/>
+                </mxCell>
+                <mxCell id="KkATwMuEU8edBqc6IpdI-4" edge="1" parent="1" source="b7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="KkATwMuEU8edBqc6IpdI-3">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="420" y="653" as="sourcePoint"/>
+                        <mxPoint x="530" y="773" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="KkATwMuEU8edBqc6IpdI-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="i = 1" vertex="1">
+                    <mxGeometry height="50" width="110" x="505" y="245" as="geometry"/>
+                </mxCell>
+                <mxCell id="KkATwMuEU8edBqc6IpdI-6" edge="1" parent="1" source="b3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KkATwMuEU8edBqc6IpdI-5">
+                    <mxGeometry relative="1" x="0.3526" as="geometry">
+                        <mxPoint x="550" y="263" as="sourcePoint"/>
+                        <mxPoint x="550" y="376" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

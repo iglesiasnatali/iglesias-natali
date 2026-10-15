@@ -1,0 +1,58 @@
+<mxfile host="65bd71144e">
+    <diagram id="casos-uso" name="Casos de uso - Prestamos">
+        <mxGraphModel dx="1331" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;verticalAlign=top;fontStyle=1;fontSize=14;" value="Sistema de Gestión de Préstamos Bancarios" vertex="1">
+                    <mxGeometry height="520" width="360" x="420" y="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Cliente" vertex="1">
+                    <mxGeometry height="80" width="40" x="260" y="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="ac2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Empleado del Banco" vertex="1">
+                    <mxGeometry height="80" width="40" x="900" y="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="u1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Iniciar sesión" vertex="1">
+                    <mxGeometry height="50" width="240" x="480" y="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="u2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Solicitar préstamo" vertex="1">
+                    <mxGeometry height="50" width="240" x="480" y="235" as="geometry"/>
+                </mxCell>
+                <mxCell id="u3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Cargar datos del cliente" vertex="1">
+                    <mxGeometry height="50" width="240" x="480" y="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="u4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Evaluar préstamo" vertex="1">
+                    <mxGeometry height="50" width="240" x="480" y="385" as="geometry"/>
+                </mxCell>
+                <mxCell id="u5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Aprobar o rechazar préstamo" vertex="1">
+                    <mxGeometry height="50" width="240" x="480" y="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="u6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar estado del préstamo" vertex="1">
+                    <mxGeometry height="50" width="240" x="480" y="535" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1" edge="1" parent="1" source="ac1" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="u1" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2" edge="1" parent="1" source="ac1" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="u2" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r3" edge="1" parent="1" source="ac1" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="u6" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r4" edge="1" parent="1" source="ac2" style="endArrow=none;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="u1" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r5" edge="1" parent="1" source="ac2" style="endArrow=none;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="u3" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r6" edge="1" parent="1" source="ac2" style="endArrow=none;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="u4" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="r7" edge="1" parent="1" source="ac2" style="endArrow=none;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="u5" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
