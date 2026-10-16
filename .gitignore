@@ -10,3 +10,12 @@ env/
 __pycache__/
 *.py[cod]
 *.egg-info/
+
+# Node.js / npm
+node_modules/
+npm-debug.log*
+.npm/
+
+# Next.js
+.next/
+out/

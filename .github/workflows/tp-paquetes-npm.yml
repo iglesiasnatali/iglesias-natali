@@ -1,0 +1,44 @@
+name: CI - TP Paquetes npm
+
+# El pipeline se ejecuta automáticamente en cada push que modifique
+# el proyecto (o este mismo workflow).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tp-paquetes-npm/**"
+      - ".github/workflows/tp-paquetes-npm.yml"
+  pull_request:
+    paths:
+      - "tp-paquetes-npm/**"
+
+# Todos los comandos se ejecutan dentro de la carpeta del proyecto.
+defaults:
+  run:
+    working-directory: tp-paquetes-npm
+
+jobs:
+  build-and-test:
+    name: Instalar dependencias y ejecutar pruebas
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Descargar el código del repositorio
+        uses: actions/checkout@v4
+
+      - name: 2. Preparar el entorno (Node.js)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: tp-paquetes-npm/package-lock.json
+
+      - name: 3. Instalar las dependencias
+        run: npm ci
+
+      - name: 4. Ejecutar las pruebas automáticas
+        run: npm test
+
+      - name: 5. Informar el resultado final
+        if: always()
+        run: echo "Resultado del pipeline: ${{ job.status }}"

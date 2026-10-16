@@ -1,0 +1,21 @@
+{
+  "name": "tp-paquetes-npm",
+  "version": "1.0.0",
+  "description": "TP - Administradores de Paquetes y GitHub Actions (npm + lodash)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "npm",
+    "lodash",
+    "github-actions"
+  ],
+  "author": "Natali Iglesias",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.18.1"
+  }
+}
