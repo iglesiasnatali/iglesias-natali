@@ -10,7 +10,7 @@ test("capitalizar devuelve el texto en Formato Título", () => {
 });
 
 test("promedio calcula el promedio de una lista de números", () => {
-  assert.equal(promedio([10, 20, 30]), 21);
+  assert.equal(promedio([10, 20, 30]), 20);
 });
 
 test("unicos elimina los elementos repetidos", () => {
