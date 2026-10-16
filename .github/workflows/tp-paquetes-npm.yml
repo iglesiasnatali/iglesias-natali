@@ -41,4 +41,4 @@ jobs:
 
       - name: 5. Informar el resultado final
         if: always()
-        run: echo "Resultado del pipeline: ${{ job.status }}"
+        run: 'echo "Resultado del pipeline: ${{ job.status }}"'
