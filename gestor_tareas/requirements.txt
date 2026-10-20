@@ -1,0 +1,8 @@
+# Librería 1 -> versión exacta
+rich==15.0.0
+
+# Librería 2 -> versión exacta
+tabulate==0.10.0
+
+# Librería 3 -> sin especificar versión
+colorama
